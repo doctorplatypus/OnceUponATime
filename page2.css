@@ -1,0 +1,41 @@
+body {
+    background-color: #DE8E48;
+    margin: 0; /*  makes test start from the leftmost wall */
+    padding: 0;
+}
+
+.spotlight{
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle 100px at 50% 50%, 10%, rgba(0,0,0,0.98)
+    );
+    pointer-events: none;
+
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 140px;
+    background: #372C2E;
+    color: #DE9E48;
+    font-size: 15px;
+    border-radius: 20px;  /* makes it curved button */
+    transition:0.5s ease;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #4d4042;
+    box-shadow:  0 0 5px #4d4042,
+    0 0 20px #4d4042,
+    0 0 60px #4d4042
+    0 0 150px #4d4042;
+}
