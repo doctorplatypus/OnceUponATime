@@ -7,7 +7,7 @@ document.addEventListener("mousemove", (e) => {
 
   const revealedArea = document.querySelector(".spotlight");
   revealedArea.style.background = `radial-gradient(
-    circle 100px at ${gradientCenterX}% ${gradientCenterY}%,
+    circle 150px at ${gradientCenterX}% ${gradientCenterY}%,
     transparent 10%,
     rgba(0, 0, 0, 0.98)
   )`;
