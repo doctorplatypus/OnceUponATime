@@ -2,33 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="onceUponAWeb.css" />
+    <title>GG's Gothic MySpace</title>
+    <!-- Gothic Glitch Theme -->
+    <link
+      rel="stylesheet"
+      href="https://sophiezhng.github.io/my-space-windows-93-themes/gothicglitch.css"
+    />
+    <!-- Bloody Font -->
+    <link href="https://fonts.cdnfonts.com/css/bloody" rel="stylesheet" />
+    <!-- MySpace Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Custom additions */
+      .top-8-banner {
+        background: url(clown.jpg) no-repeat;
+        height: 300px;
+        background-size: cover;
+        border-bottom: 3px solid red;
+      }
+      .bloody-font {
+        font-family: "Bloody", "Century Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo"></div>
+      <div id="hSub" class="bloody-font">EST. 2025 - 666 FRIENDS</div>
+    </div>
 
-    <section class="about-aj">
-      <div class="about">
-        <div class="image-gg"></div>
+    <!-- Profile Banner -->
+    <div class="top-8-banner"></div>
 
-        <div class="text">
-          <h2>About Gg:</h2>
-          <p>Hi My name is Gg!! I am a communication major at UIC, and I love radio, film and all things media :)</p>
+    <!-- Main Content Container -->
+    <div class="tableRight" style="width: 70%; float: left">
+      <!-- About Me Section -->
+      <div class="extended box">
+        <div class="boxHead bloody-font">
+          <i class="fa fa-skull"></i> ABOUT GG
+        </div>
+        <div class="boxInfo box">
+          <h2 id="name">OUR LOCAL HORROR EXPERT</h2>
+          <p>
+            <strong>Status:</strong>
+            <span class="blinkRed">Currently watching horror films</span>
+          </p>
+          <p><strong>Zodiac:</strong> <span class="blinkRed">Pisces</span></p>
+          <p>
+            Communication major at UIC. Lover of radio, film, and all things
+            media.
+          </p>
+          <p class="blinkGreen">
+            "In space no one can hear you scream... but on MySpace they can!"
+          </p>
         </div>
       </div>
-    </section>
 
-    <div class="button1">
-      <input type="button" class="button" value="Back Button"
-      onclick="window.location.href= 'https://doctorplatypus.github.io/OnceUponATime/page2';"
-      <div class="button1">
-        <input type="button" class="button" value="Final Page"
-        onclick="window.location.href= 'https://doctorplatypus.github.io/OnceUponATime/Final';"
+      <!-- Interests Section -->
+      <div class="extended box" style="margin-top: 20px">
+        <div class="boxHead bloody-font">
+          <i class="fa fa-heart"></i> INTERESTS
+        </div>
+        <div class="boxInfo box">
+          <ul>
+            <li>Horror cinema (especially 80s slashers)</li>
+            <li>Analog horror aesthetics</li>
+            <li>Pirate radio stations</li>
+            <li>Gothic architecture</li>
+            <li class="blinkYellow">Glitch art</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </head>
-  <body></body>
-  <footer>
-    <p>&copy; 2025 Andrew Mcclendon</p>
-  </footer>
+
+    <!-- Right Sidebar -->
+    <div class="tableLeft" style="width: 28%; float: right">
+      <!-- Friends List -->
+      <div class="topRight">
+        <div class="rightHead bloody-font">
+          <i class="fa fa-users"></i> TOP 8
+        </div>
+        <div class="fwiendCount blinkRed">666 FIENDS</div>
+        <div class="fwiendFace"></div>
+      </div>
+
+      <!-- Music Player -->
+      <div class="player box" style="margin-top: 20px">
+        <div class="boxHead bloody-font">
+          <i class="fa fa-music"></i> CURRENT SONG
+        </div>
+        <marquee behavior="scroll" direction="left" class="blinkViolet">
+          Bauhaus - Bela Lugosi's Dead
+        </marquee>
+        <audio controls style="width: 100%">
+          <source src="https://example.com/bela-lugosi.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="player box" style="margin-top: 20px; text-align: center">
+        <input
+          type="button"
+          class="button blinkRed"
+          value="BACK"
+          onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/page2'"
+        />
+        <input
+          type="button"
+          class="button blinkRed"
+          value="FINAL PAGE"
+          onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/Final'"
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>
+        &copy; 2025 ANDREW MCCLENDON | Theme Made by sophie:
+        https://sophiezhng.github.io/my-space-windows-93-themes
+        <span class="blinkYellow">VIEWS: 666</span>
+      </p>
+    </div>
+
+    <!-- MySpace URL Box -->
+    <div class="url" title="myspace.com/gggothic"></div>
+
+    <!-- Guestbook -->
+    <div class="extended box" style="clear: both; margin-top: 20px">
+      <div class="boxHead bloody-font">
+        <i class="fa fa-book"></i> GUESTBOOK
+      </div>
+      <div class="boxInfo box">
+        <p>
+          <span class="blinkRed">Killer Clown:</span> Nice profile! Let's
+          collaborate on a horror podcast.
+        </p>
+        <p>
+          <span class="blinkRed">MORTICIA:</span> Loving the aesthetic. Add me?
+        </p>
+        <textarea
+          placeholder="Sign my guestbook..."
+          style="
+            width: 100%;
+            background: black;
+            color: white;
+            border: 1px solid red;
+          "
+        ></textarea>
+        <input
+          type="submit"
+          class="button blinkRed"
+          value="SUBMIT"
+          style="float: right"
+        />
+      </div>
+    </div>
+  </body>
 </html>

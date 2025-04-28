@@ -14,6 +14,16 @@ body {
   );
   pointer-events: none;
 }
+.blacklight {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle 100px at 50% 50%,
+    10%,
+    rgba(0, 0, 0, 0.98)
+  );
+  pointer-events: none;
+}
 .button1 {
   display: flex;
   align-items: center;
@@ -82,5 +92,3 @@ body {
   75% { transform: translate(50px, 50px); }   /* Move left & down */
   100% { transform: translate(0, 0); }        /* Back to start */
 }
-
-
