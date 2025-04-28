@@ -125,8 +125,8 @@ h2 {
 
 footer {
   width: 5100px;
-  text-align: center;
-  line-height: 1;
+  text-align: left;
+  line-height: 27px;
   font-size: 12px;
   color: #ffffff;
   background: rgba(0, 69, 172, 0.303);
@@ -136,3 +136,4 @@ footer {
  
   
 }
+
