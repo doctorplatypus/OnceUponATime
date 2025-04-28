@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="onceUponAWeb.css" />
-    <section class="about-aj">
-      <div class="about">
-        <div class="image-Maria"></div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/7.css" />
+  <link rel="stylesheet" href="Maria.css" />
+  <!-- Load jQuery first -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class='container'>
+    <div class="image-Maria icon"></div>
+    <div class='paintIcon icon'></div>
+    <div class='cameraIcon icon'></div>
+  
+  </div>
 
-        <div class="text">
-          <h2>About Maria:</h2>
-          <p>
-            Hi, I'm Maria!!! I love all things rock (that includes geology) and
+  <section class="about-aj">
+    <div class="about">     
+      <div class="window active" style="max-width: 300px">
+        <div class="title-bar">
+          <div class="title-bar-text">About Maria</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="window.location.href='http://127.0.0.1:3000/Andrew.html'"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="window.location.href='http://127.0.0.1:3000/index.html'"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>Hi, I'm Maria!!! I love all things rock (that includes geology) and
             claymation. Fun facts: I'm left handed, I have a pet snake named Tj,
             and I have a crippling fear of earthquakes. If you want to chat you
-            can find me @maria_glikis on Instagram! Thanks for tuning in!!!
-          </p>
+            can find me @maria_glikis on Instagram! Thanks for tuning in!!!! </p>
         </div>
       </div>
-    </section>
-
-    <div class="button1">
-      <input type="button" class="button" value="Back Button"
-      onclick="window.location.href=
-      'https://doctorplatypus.github.io/OnceUponATime/page2';"
-      <div class="button1">
-        <input type="button" class="button" value="Final Page"
-        onclick="window.location.href= 'https://doctorplatypus.github.io/OnceUponATime/Final';"
-      </div>
     </div>
-    
-  </head>
-  <footer>
-    <p>&copy; 2025 Andrew Mcclendon</p>
-  </footer>
-  <body></body>
+  </section>
+  </div>
+  <script src="Maria.js"></script>
+</body>
+<footer>
+  <div class='container2'>
+    <div class='windowsIcon icon'></div>
+  </div>
+  <p>&copy; 2025 Andrew Mcclendon</p>
+  
+</footer>
 </html>
