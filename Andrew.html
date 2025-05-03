@@ -2,42 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AJ's Lost Media Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Aj.css" />
-
-    <section class="about-aj">
-      <div class="about">
-        <div class="image-aj"></div>
-
-        <div class="text">
-          <h2>About Aj:</h2>
-          <p>
-            Hi my name is Andrew but everyone calls me Aj! I major in computer
-            science and play volleyball. On Lost Media I have a few segments,
-            but my favorite is when I cover artist who have under 100k streams,
-            to give them a spotlight so that their songs don't become lost
-            media. I also do 2 other segments "Hot Takes With Aj" and 
-            "This or That"(aka would you rather). If you ever see me around
-             feel free to say what's up and if any of this sounds cool Listen up!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="button1">
-      <input type="button" class="button" value="Back Button"
-      onclick="window.location.href= 'https://doctorplatypus.github.io/OnceUponATime/page2';"
-      <div class="button1">
-        <input type="button" class="button" value="Final Page"
-        onclick="window.location.href= 'https://doctorplatypus.github.io/OnceUponATime/Final';"
-      </div>
-    </div>
   </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="profile-header">
+        <div class="header-content">
+          <h1 class="glowing-title">AJ's Media Vault</h1>
+          <p class="subtitle">Digital Archivist & Music Curator</p>
+        </div>
+      </header>
+
+      <!-- Forces layout for grid -->
+      <main class="content-grid">
+        <!-- Image -->
+
+        <div class="image-container">
+          <img src="Aj.jpg" alt="AJ's Profile" class="profile-image" />
+          <div class="image-overlay"></div>
+        </div>
+
+        <!-- About me -->
+        <div class="info-card">
+          <h2 class="section-heading">About AJ</h2>
+          <div class="divider"></div>
+          <p class="bio-text">
+            <span class="first-letter">A</span>ndrew "AJ" Mcclendon - Majors in
+            Computer Science, loves volleyball. Specializing in rescuing
+            uncovering songs from obscurity, focusing on tracks with
+            <em class="highlight">under s100k streams</em> before they vanish
+            into the void.
+          </p>
+
+   
+            <div class="segment-card">
+              <div class="segment-icon">🔥</div>
+              <h3 class="segment-title">Hot Takes with AJ</h3>
+              <p class="segment-desc">Turning up the temperatuer, because the takes are gonna get hot!</p>
+            </div>
+
+            <div class="segment-card">
+              <div class="segment-icon">🤔</div>
+              <h3 class="segment-title">This or That</h3>
+              <p class="segment-desc">Is it knock off would you rather? Yes, but dont ask questions that take the fun away from it :/</p>
+            </div>
+          </div>
+      </main>
+
+
+    
+        <button
+          class="nav-btn back-btn"
+          onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/Final'"
+        >
+          ↩ Return
+        </button>
+        <button
+          class="nav-btn main-btn"
+          onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/page2'"
+        >
+          Final Page
+        </button>
+   
   
-  <body></body>
-  <footer>
-    <p>&copy; 2025 Andrew Mcclendon</p>
-  </footer>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Andrew Mcclendon</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

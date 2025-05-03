@@ -5,8 +5,6 @@ $(document).ready(function() {
       marginTop: 20,
       marginLeft: 20
     });
-    
-    // Your other JavaScript code here
   });
   
   // Iconizer plugin definition
@@ -43,7 +41,4 @@ $(document).ready(function() {
     });
   };
   
-  // Debug function
-  function l(e) {
-    console.log(e);
-  }
+  
