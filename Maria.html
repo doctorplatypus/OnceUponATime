@@ -12,6 +12,28 @@
     <div class="image-Maria icon"></div>
     <div class='paintIcon icon'></div>
     <div class='cameraIcon icon'></div>
+    <div class="photography-window">
+      <div class="window active hidden" style="max-width: 400px">
+        <div class="title-bar">
+          <div class="title-bar-text">Maria's Photography</div>
+          <div class="title-bar-controls">
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <menu role="tablist" aria-label="Window with Tabs">
+            <button role="tab" aria-controls="Camera1">Bubz1</button>
+            <button role="tab" aria-controls="Camera2">Bubz2</button>
+          </menu>
+          <article role="tabpanel" id="Camera1">
+            <img style="width: 100%" src="bub1.jpg" />
+          </article>
+          <article role="tabpanel" id="Camera2" hidden>
+            <img style="width: 100%" src="bubz2.jpg" />
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
   
   </div>
     <div class = "image-overlay hidden" > <img src ="maria_donut.png"></div>
@@ -38,17 +60,15 @@
   <div class="title-bar">
     <div class="title-bar-text">Maria's Art</div>
     <div class="title-bar-controls">
-      
-
     </div>
   </div>
   <div class="window-body has-space ">
     <menu role="tablist" aria-label="Window with Tabs">
-      <button role="tab" aria-controls="placeholder1-tab">placeholder1</button>
-      <button role="tab" aria-controls="placeholder2-tab">placeholder2</button>
-      <button role="tab" aria-controls="placeholder3-tab">placeholder3</button>
-      <button role="tab" aria-controls="placeholder4-tab">placeholder4</button>
-      <button role="tab" aria-controls="placeholder5-tab">placeholde5</button>
+      <button role="tab" aria-controls="placeholder1-tab">1</button>
+      <button role="tab" aria-controls="placeholder2-tab">2</button>
+      <button role="tab" aria-controls="placeholder3-tab">3</button>
+      <button role="tab" aria-controls="placeholder4-tab">4</button>
+      <button role="tab" aria-controls="placeholder5-tab">5</button>
     </menu>
 
     <article role="tabpanel" id="placeholder1-tab">
@@ -77,9 +97,10 @@
     </div>
   </section>
   </div>
-  
+
   <script src="Maria.js"></script>
 </body>
+
 <footer>
   <div class='container2'>
     <div class='windowsIcon icon'></div>

@@ -4,6 +4,10 @@
   --accent-gold: #de9e48;
   --hover-glow: rgba(222, 158, 72, 0.15);
   --deep-shadow: rgba(55, 44, 46, 0.4);
+  /* fire effect */
+  --flame-orange: #ff6600;
+  --flame-red: #ff3300;
+  --flame-dark: #990000;
 }
 
 body {
@@ -271,4 +275,224 @@ body {
 .hidden-btn:hover {
   background: rgba(90, 24, 154, 0.5);
   border-color: rgba(255, 255, 255, 0.3);
+}
+
+/*  FIRE EFFECT STYLES*/
+.flame-container {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.flame {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 30% 40%, 
+    var(--flame-orange) 10%, 
+    var(--flame-red) 30%, 
+    var(--flame-dark) 60%, 
+    transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  mix-blend-mode: screen;
+  animation: flameBurn 0.8s ease-out;
+}
+
+@keyframes flameBurn {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) translateY(-20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.5) translateY(-40px);
+    opacity: 0;
+  }
+}
+
+.fire-spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--accent-gold);
+  border-radius: 50%;
+  animation: sparkFly 0.6s linear;
+}
+
+@keyframes sparkFly {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* Enhanced fire segment card */
+.segment-card[data-fire] {
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.segment-card[data-fire]:active {
+  transform: scale(0.95);
+}
+
+.segment-card[data-fire]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, 
+    var(--hover-glow) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.segment-card[data-fire]:hover::after {
+  opacity: 0.3;
+}
+
+/* Existing media queries remain at bottom */
+@media (max-width: 768px) {
+  /* ... existing media queries ... */
+}
+
+.choice-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.choice-card {
+  background: rgba(55, 44, 46, 0.8);
+  border: 1px solid rgba(222, 158, 72, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.choice-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px var(--deep-shadow);
+}
+
+.choice-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(222, 158, 72, 0.1),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.choice-card:hover::after {
+  left: 100%;
+}
+
+.vote-bar {
+  height: 3px;
+  background: var(--accent-gold);
+  margin-top: 0.5rem;
+  transition: width 0.5s ease;
+}
+
+.decision-history {
+  background: rgba(0,0,0,0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.history-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(222,158,72,0.1);
+}
+.record-player {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 300px;
+  position: relative;
+}
+
+.vinyl-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+}
+
+.vinyl {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+  animation-play-state: paused;
+  filter: drop-shadow(0 0 10px var(--deep-shadow));
+}
+
+.vinyl-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: var(--primary-dark);
+  border: 2px solid var(--accent-gold);
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.play-button {
+  background: rgba(55, 44, 46, 0.95);
+  color: var(--accent-gold);
+  border: 2px solid var(--accent-gold);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px var(--deep-shadow);
+}
+
+.play-button:hover {
+  background: var(--accent-gold);
+  color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.play-button:active {
+  transform: scale(0.95);
 }

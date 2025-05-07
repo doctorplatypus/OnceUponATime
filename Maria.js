@@ -35,6 +35,14 @@ $(document).ready(function() {
     $('.image-overlay').on('click', function() {
       $(this).addClass('hidden');
     });
+
+    $('.cameraIcon').on('click', function() {
+      // Find the Art window by its title text and toggle visibility
+      $('.title-bar-text:contains("Photography")').closest('.window')
+          .toggleClass('hidden')
+         
+          .toggleClass('active', !$(this).hasClass('hidden'));
+  });
   });
   
   // Iconizer plugin definition

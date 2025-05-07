@@ -152,3 +152,11 @@ body {
 .hidden {
   display: none !important; /* Force override 7.css */
 }
+
+
+
+.photography-window {
+  position: absolute;
+  right: 0;
+  left: 30;
+}
