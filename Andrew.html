@@ -20,16 +20,34 @@
         </div>
       </header>
 
-      <!-- Forces layout for grid -->
       <main class="content-grid">
-        <!-- Image -->
+        <!-- Left Column -->
+        <div class="media-column">
+          <div class="image-container">
+            <img src="Aj.jpg" alt="AJ's Profile" class="profile-image" />
+            <div class="image-overlay"></div>
+          </div>
 
-        <div class="image-container">
-          <img src="Aj.jpg" alt="AJ's Profile" class="profile-image" />
-          <div class="image-overlay"></div>
+          <div class="record-player">
+            <p>
+              Just a little sneak peak into some of the music I play live on
+              air!
+            </p>
+            <p>Enjoy Are You Ready by: E.Y.C.</p>
+            <div class="vinyl-container">
+              <img
+                src="VinylEYC.webp"
+                class="vinyl"
+                alt="Spinning vinyl record"
+              />
+              <div class="vinyl-center"></div>
+            </div>
+            <button class="play-button" id="playButton">▶ Play</button>
+            <audio id="player" src="AreYouReady.mp3"></audio>
+          </div>
         </div>
 
-        <!-- About me -->
+        <!-- Right Column -->
         <div class="info-card">
           <h2 class="section-heading">About AJ</h2>
           <div class="divider"></div>
@@ -41,19 +59,23 @@
             into the void.
           </p>
 
-   
+          <div class="segment-cards">
             <div class="segment-card" data-fire>
               <div class="segment-icon">🔥</div>
               <h3 class="segment-title">Hot Takes with AJ</h3>
-              <p class="segment-desc">Turning up the temperatuer, because the takes are gonna get hot!</p>
+              <p class="segment-desc">
+                Turning up the temperature, because the takes are gonna get hot!
+              </p>
             </div>
 
             <div class="segment-card">
               <div class="segment-icon">🤔</div>
               <h3 class="segment-title">This or That</h3>
-              <p class="segment-desc">Is it knock off would you rather? Yes, but dont ask questions that take the fun away from it :/
-                Now do you perfer this or that?
+              <p class="segment-desc">
+                Is it knock off would you rather? Yes, but don't ask questions
+                that take the fun away from it :/
               </p>
+
               <div class="choice-grid">
                 <div class="choice-card" data-choice="1">
                   <div class="choice-content">
@@ -64,7 +86,7 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="choice-card" data-choice="2">
                   <div class="choice-content">
                     <span class="choice-text">90s Grunge</span>
@@ -75,24 +97,12 @@
                   </div>
                 </div>
               </div>
-              </div>
             </div>
+          </div>
+        </div>
       </main>
 
-      <div class="record-player">
-        <p>Just a little sneak peak into some of the music I play live on air!</p>
-        <p>Enjoy Are You Ready by: E.Y.C.</p>
-        <div class="vinyl-container">
-          <img src="VinylEYC.webp" width = 200 
-               class="vinyl" 
-               alt="Spinning vinyl record">
-          <div class="vinyl-center"></div>
-        </div>
-        <button class="play-button" id="playButton">▶ Play</button>
-        <audio id="player" src="AreYouReady.mp3"></audio>
-      </div>
-
-    
+      <div class="hub-navigation">
         <button
           class="nav-btn back-btn"
           onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/page2'"
@@ -105,12 +115,13 @@
         >
           Final Page
         </button>
-   
-  
+      </div>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 Andrew Mcclendon</p>
-    </footer>
+      <footer class="site-footer">
+        <p>&copy; 2025 Andrew Mcclendon</p>
+      </footer>
+    </div>
+
     <audio id="fireSound" src="fire.wav"></audio>
     <script src="aj.js"></script>
   </body>

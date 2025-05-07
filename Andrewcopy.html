@@ -12,62 +12,96 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header Section -->
+      <header class="profile-header">
+        <div class="header-content">
+          <h1 class="glowing-title">AJ's Media Vault</h1>
+          <p class="subtitle">Digital Archivist & Music Curator</p>
+        </div>
+      </header>
 
-
-      <!-- Forces layout for grid -->
       <main class="content-grid">
-        <!-- Image -->
+        <!-- Left Column -->
+        <div class="media-column">
+          <div class="image-container">
+            <img src="Aj.jpg" alt="AJ's Profile" class="profile-image" />
+            <div class="image-overlay"></div>
+          </div>
 
-        <div class="image-container">
-          <img src="Aj.jpg" alt="AJ's Profile" class="profile-image" />
-          <div class="image-overlay"></div>
+          <div class="record-player">
+            <p>
+              Just a little sneak peak into some of the music I play live on
+              air!
+            </p>
+            <p>Enjoy Are You Ready by: E.Y.C.</p>
+            <div class="vinyl-container">
+              <img
+                src="VinylEYC.webp"
+                class="vinyl"
+                alt="Spinning vinyl record"
+              />
+              <div class="vinyl-center"></div>
+            </div>
+            <button class="play-button" id="playButton">▶ Play</button>
+            <audio id="player" src="AreYouReady.mp3"></audio>
+          </div>
         </div>
 
-        <!-- About me -->
+        <!-- Right Column -->
         <div class="info-card">
           <h2 class="section-heading">About AJ</h2>
           <div class="divider"></div>
           <p class="bio-text">
             <span class="first-letter">A</span>ndrew "AJ" Mcclendon - Majors in
-           *Brrtz* I guess you found my hidden page, well done! Now you have access to the blacklight filter where you can find out the various guest I have had during my time in radio. Good Luck *Brttz*
+            Computer Science, loves volleyball. Specializing in rescuing
+            uncovering songs from obscurity, focusing on tracks with
+            <em class="highlight">under s100k streams</em> before they vanish
+            into the void.
           </p>
 
-          <div class="segment-card" data-fire>
-            <div class="segment-icon">🔥</div>
-            <h3 class="segment-title">Hot Takes with AJ</h3>
-            <p class="segment-desc">Turning up the temperatuer, because the takes are gonna get hot!</p>
-          </div>
+          <div class="segment-cards">
+            <div class="segment-card" data-fire>
+              <div class="segment-icon">🔥</div>
+              <h3 class="segment-title">Hot Takes with AJ</h3>
+              <p class="segment-desc">
+                Turning up the temperature, because the takes are gonna get hot!
+              </p>
+            </div>
 
-          <div class="segment-card">
-            <div class="segment-icon">🤔</div>
-            <h3 class="segment-title">This or That</h3>
-            
-            <div class="choice-grid">
-              <div class="choice-card" data-choice="1">
-                <div class="choice-content">
-                  <span class="choice-text">80s Synthwave</span>
-                  <div class="choice-stats">
-                    <div class="vote-bar" style="width: 65%"></div>
-                    <span class="percentage">65%</span>
+            <div class="segment-card">
+              <div class="segment-icon">🤔</div>
+              <h3 class="segment-title">This or That</h3>
+              <p class="segment-desc">
+                Is it knock off would you rather? Yes, but don't ask questions
+                that take the fun away from it :/
+              </p>
+
+              <div class="choice-grid">
+                <div class="choice-card" data-choice="1">
+                  <div class="choice-content">
+                    <span class="choice-text">80s Synthwave</span>
+                    <div class="choice-stats">
+                      <div class="vote-bar" style="width: 65%"></div>
+                      <span class="percentage">65%</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="choice-card" data-choice="2">
-                <div class="choice-content">
-                  <span class="choice-text">90s Grunge</span>
-                  <div class="choice-stats">
-                    <div class="vote-bar" style="width: 35%"></div>
-                    <span class="percentage">35%</span>
+
+                <div class="choice-card" data-choice="2">
+                  <div class="choice-content">
+                    <span class="choice-text">90s Grunge</span>
+                    <div class="choice-stats">
+                      <div class="vote-bar" style="width: 35%"></div>
+                      <span class="percentage">35%</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
           </div>
-    </main>
+        </div>
+      </main>
 
-    
         <button
           class="nav-btn back-btn"
           onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/Final'"

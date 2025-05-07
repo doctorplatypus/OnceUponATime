@@ -50,6 +50,7 @@ body {
 }
 
 
+
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -57,17 +58,14 @@ body {
   margin-bottom: 3rem;
 }
 
-
-.profile-visual {
-  position: relative;
+.media-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.image-frame {
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 15px 35px var(--deep-shadow);
-}
+
+
 
 
 .image-container {
@@ -103,10 +101,6 @@ body {
 }
 
 .profile-image:hover {
-  transform: scale(1.03);
-}
-
-.hover-reveal:hover {
   transform: scale(1.03);
 }
 
@@ -243,6 +237,24 @@ body {
   .hub-navigation {
       flex-direction: column;
   }
+  .media-column {
+    order: 1;
+  }
+  
+  .info-card {
+    order: 2;
+  }
+  
+  .record-player {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  
+  .vinyl-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
 
 }
 .blacklight {
@@ -253,6 +265,13 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: 999;
+}
+.blacklight:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(90, 24, 154, 0.1),
+    rgba(154, 24, 90, 0.1)
+  );
 }
 
 .hidden-btn {
@@ -270,6 +289,8 @@ body {
   backdrop-filter: blur(4px);
   pointer-events: none;
   z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .hidden-btn:hover {
@@ -364,11 +385,6 @@ body {
   opacity: 0.3;
 }
 
-/* Existing media queries remain at bottom */
-@media (max-width: 768px) {
-  /* ... existing media queries ... */
-}
-
 .choice-grid {
   display: grid;
   gap: 1rem;
@@ -435,19 +451,24 @@ body {
   padding: 0.3rem 0;
   border-bottom: 1px solid rgba(222,158,72,0.1);
 }
+
 .record-player {
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 300px;
-  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgba(55, 44, 46, 0.9);
+  border-radius: 15px;
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 0 40px var(--deep-shadow);
 }
 
+
 .vinyl-container {
-  position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 1rem;
 }
+
 
 .vinyl {
   width: 100%;
@@ -458,17 +479,8 @@ body {
   filter: drop-shadow(0 0 10px var(--deep-shadow));
 }
 
-.vinyl-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background: var(--primary-dark);
-  border: 2px solid var(--accent-gold);
-  border-radius: 50%;
-}
+
+
 
 @keyframes spin {
   from { transform: rotate(0deg); }
