@@ -508,3 +508,7 @@ body {
 .play-button:active {
   transform: scale(0.95);
 }
+
+.flame, .fire-spark {
+  z-index: 9999 !important;
+}
