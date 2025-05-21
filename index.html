@@ -7,43 +7,60 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Lost Media: Unearthing Underground Stories</title>
     <link rel="stylesheet" href="onceUponAWeb.css" />
+    <title>Lost Media: Unearthing Underground Stories</title>
   </head>
   <body>
     <header>
       <h1>Lost Media: Unearthing Underground Stories</h1>
     </header>
+
     <main>
-      <p>
-        Welcome to my website! Explore the world of lost media and uncover the
-        stories behind my radio show members. Your mission: find and click on
-        the hidden pictures to learn more about them. There are 3 members to
-        discover—good luck! Click the button below to begin.
+      <p class="access-message">
+        <span class="system-prompt">[SECURITY CLEARANCE GRANTED]</span><br/>
+        You've accessed the UIC Radio Archival Division.<br/><br/>
+        This terminal contains <em>declassified materials</em> from our
+        underground broadcast team. 3 operative profiles remain partially
+        encrypted - visual artifacts detected in the surveillance feed below may
+        contain
+        <span class="highlight">hidden authentication protocols</span
+        >.<br /><br />
+        <span class="terminal-text">OBJECTIVE:</span> Interface with anomalous
+        media fragments<br />
+        <span class="terminal-text">REWARD:</span> Revitalized Lost Media<br /><br />
+        <span class="warning">[WARNING]</span> Profile access expires in
+        *redacted*
       </p>
+
       <div class="imagedisc"></div>
-      <div class="main">
-        <input
-          type="button"
+
+      <div class="button-container">
+        <button
           class="button"
-          value="Start the Game"
           onclick="window.location.href='https://doctorplatypus.github.io/OnceUponATime/page2';"
-        />
-        <input
-          type="button"
-          class="buttonRadio"
-          value="Listen to my Show"
-          onclick="window.location.href='https://www.uicradio.net/';"
-        />
+        >
+          Begin Exploration
+        </button>
+        <button
+          class="button"
+          onclick="location.href='https://www.uicradio.net/'"
+        >
+          Listen to *redacted*
+        </button>
       </div>
+
+      <div class="waiting-status">
+        <div class="loading-icon"></div>
+        <span>Initializing Archive Access...</span>
+      </div>
+
       <p class="note">
-        P.S. Tune in to my radio show every Thursday from 6-7 PM!
+        System Status: Connected | Next Broadcast: Thursday 6-7PM
       </p>
     </main>
+
     <footer>
       <p>&copy; 2025 Andrew Mcclendon</p>
     </footer>
-    <div class="spotlight"></div>
-    <script src="main.js"></script>
   </body>
 </html>
