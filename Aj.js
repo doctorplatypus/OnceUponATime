@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const playButton = document.getElementById('playButton');
 const vinyl = document.querySelector('.vinyl');
 const audioPlayer = document.getElementById('player');
-
+audioPlayer.volume = 0.1;
 let isPlaying = false;
 
 playButton.addEventListener('click', () => {
