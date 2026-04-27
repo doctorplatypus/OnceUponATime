@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/f91cb26c-e0e6-4b16-a559-a0239ce4916f
+
 Once Upon A Time: Lost Media Archive
 
 Welcome to the Once Upon A Time: Lost Media Archive, an immersive, interactive digital experience designed as a "UIC Radio Archival Division" terminal. This project allows users to navigate through various declassified operative profiles to "rescue" lost media and stories from oblivion.
@@ -50,3 +54,4 @@ Final.html	The final "Void" page. Concludes the narrative journey.
 This project is configured as a static site, intended for deployment on hosting platforms like GitHub Pages. Ensure all asset paths (images, audio files like AreYouReady.mp3 and Fire.wav) are correctly mapped relative to the index.html and profile pages.
 
 Created for the Lost Media Archive Project. System Status: Connected.
+
